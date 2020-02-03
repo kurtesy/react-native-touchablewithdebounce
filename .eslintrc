@@ -1,0 +1,33 @@
+{
+  "extends": [
+    "prettier",
+    "prettier/react",
+    "plugin:prettier/recommended",
+    "eslint-config-prettier"
+  ],
+  "parser": "babel-eslint",
+  "rules": {
+    "no-use-before-define": "off",
+    "import/no-unresolved": "off",
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [".js", ".jsx"]
+      }
+    ],
+    "camelcase": "off",
+    "prettier/prettier": [
+      "error",
+      {
+        "singleQuote": true
+      }
+    ]
+  },
+  "globals": {
+    "fetch": false,
+  },
+  "env": {
+    "jest": true
+  },
+  "plugins": ["prettier"]
+}

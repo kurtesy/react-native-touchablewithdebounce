@@ -1,9 +1,15 @@
 {
   "name": "react-native-touchablewithdebounce",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "description": "TouchableOpacity Component wrapper for react-native",
   "main": "touchableWithDebounce.js",
   "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start -- --reset-cache",
+    "lint": "eslint .",
+    "cleanup": "rm -rf node_modules && rm -rf ios/Pods && rm -rf ios/DerivedData && rm -rf ios/build && echo REMEMBER TO STOP METRO BUNDLER IF YOU ARE HAVING PROBLEMS WITH A NEW PACKAGE",
+    "prettier": "prettier '**/*.js'",
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -24,9 +30,26 @@
   },
   "homepage": "https://github.com/kurtesy/react-native-touchablewithdebounce",
   "dependencies": {
+    "eslint": "^6.3.0",
     "lodash-es": "^4.17.15",
-    "react": "16.8.3",
-    "react-native": "0.59.10",
+    "prettier-eslint": "^9.0.0",
     "prop-types": "latest",
+    "react": "16.9.0",
+    "react-native": "0.61.5",
+    "react-native-vector-icons": "^6.6.0"
+  },
+  "devDependencies": {
+    "@react-native-community/eslint-config": "^0.0.5",
+    "eslint-plugin-prettier": "^3.1.2",
+    "husky": "^4.0.10",
+    "jest": "^24.9.0",
+    "jetifier": "^1.6.4",
+    "prettier": "^1.19.1",
+    "react-test-renderer": "16.8.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn lint"
+    }
   }
 }
