@@ -1,7 +1,11 @@
 # react-native-touchablewithdebounce
+## Purpose
 Prevent the OnPress function to hit the function only once on multiple Touch/Press
+Note: Set Debounce time according to the time taken by your flow to complete
+Ex: Edit Image and back to Post Details Page take less tank 1 sec (quick return)
 
-## Carousel component for react-native
+## touchable component for react-native
+
 
 ### Installation
 ```bash
