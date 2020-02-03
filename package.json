@@ -1,0 +1,32 @@
+{
+  "name": "react-native-touchablewithdebounce",
+  "version": "0.1.0",
+  "description": "TouchableOpacity Component wrapper for react-native",
+  "main": "touchableWithDebounce.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kurtesy/react-native-touchablewithdebounce.git"
+  },
+  "keywords": [
+    "react-native",
+    "touchable",
+    "touchableopacity",
+    "debounce",
+    "touchablewithdebounce"
+  ],
+  "author": "Nishant Patel <np210291@gmail.com> (https://github.com/kurtesy)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kurtesy/react-native-touchablewithdebounce/issues"
+  },
+  "homepage": "https://github.com/kurtesy/react-native-touchablewithdebounce",
+  "dependencies": {
+    "lodash-es": "^4.17.15",
+    "react": "16.8.3",
+    "react-native": "0.59.10",
+    "prop-types": "latest",
+  }
+}
