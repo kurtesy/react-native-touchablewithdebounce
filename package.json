@@ -30,7 +30,7 @@
   },
   "homepage": "https://github.com/kurtesy/react-native-touchablewithdebounce",
   "dependencies": {
-    "eslint": "^6.3.0",
+    "eslint": "^9.26.0",
     "lodash-es": "^4.17.21",
     "prettier-eslint": "^9.0.0",
     "prop-types": "latest",
